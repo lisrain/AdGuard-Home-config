@@ -2351,34 +2351,89 @@
 ||framework.sec.miui.com^$important
 
 
-# PCDN domains
-bsccdn.net
-dyp2p-ali.douyucdn.cn
-dyp2p-hw.douyucdn.cn
-ietheivaicai.com
-kuiniuca.com
-nexusedgeio.com
-onethingpcs.com
-p2p-ali.douyucdn.cn
-p2p.huya.com
-p2p.qq.com
-p2pchunk-hw.douyucdn.cn
-p2pchunk-table.douyucdn.cn
-p2pchunk-ws.douyucdn.cn
-p2perrorlog.douyucdn.cn
-p2plive-ali.douyucdn.cn
-p2plive-ws.douyucdn.cn
-p2plog.douyucdn.cn
-p2ptun.qq.com
-p2pupdate.gamedl.qq.com
-p2pupgrade.gamedl.qq.com
-p2pvod-ws.douyucdn.cn
-pcdn.yximgs.com
-pkoplink.com
-saxysec.com
-stun.douyucdn.cn
-stun.hitv.com
-stun1.douyucdn.cn
-szbdyd.com
-uhabo.com
-xycdn.com
+! 腾讯视频
+||hcdn.video.qq.com^
+||pcdn.video.qq.com^
+||vodlive.qq.com^
+||iwan-s.video.qq.com^
+||tpstelemetry.tencent.com^
+||p2p.qq.com^
+! 爱奇艺
+||hcdn.qiyi.com^
+||pdata.video.qiyi.com^
+||cachecdn.v.iqiyi.com^
+||meta-cdn.video.iq.com^
+||data6.video.iqiyi.com^
+! 优酷/土豆
+||atm.youku.com^
+||fvid.atm.youku.com^
+||html.atm.youku.com^
+||valb.atm.youku.com^
+||valf.atm.youku.com^
+||static.atm.youku.com^
+||valc.atm.youku.com^
+! 哔哩哔哩
+||mcdn.bilivideo.com^
+||mcdn.bilivideo.cn^
+||bvc.bilivideo.com^
+! 字节/西瓜/抖音 (去重后保留核心)
+||pull-rtmp-l11.ixigua.com^
+||push-rtmp-l1.ixigua.com^
+||pull-hs-f5-hot.flive.douyincdn.com^
+||flive.douyincdn.com^
+||p2p-v.byteoversea.com^
+||*volcvideo*^
+||*lf3-p2p*^
+||*p2p-snssdk*^
+! 斗鱼/虎牙/芒果
+||p2p.douyucdn.cn^
+||douyucdn.cn^
+||p2p.huya.com^
+! ---------- [4. 音乐与下载抑制] ----------
+||trackercdn.kugou.com^
+||mobiletrackercdn.kugou.com^
+||d.kugou.com^
+||sf.163.com^
+||isure6.stream.qqmusic.qq.com^
+||p-cdn.com^
+||pscdn.co^
+||p.scdn.co^
+! ---------- [5. 协议、日志与 STUN (PCDN 命门)] ----------
+||*p2pupdate*^
+||*p2pupgrade*^
+||*p2perrorlog*^
+||*p2plog*^
+||*p2p-log*^
+||*p2pchunk*^
+||*p2plive*^
+||*cdnnodedns*^
+||*mcdn*gslb*^
+||*p2p*gslb*^
+||*stun.*^
+! ---------- [6. 广告拦截与追踪] ----------
+! DoubleClick 广告素材 CDN (YouTube 等站点中插广告)
+||static.doubleclick.net^
+! 爱奇艺 TV 广告上报
+! 网页广告与追踪
+||gdt.qq.com^
+||cm.l.qq.com^
+
+! ---------- [7.网友的最新补充] ----------
+||*.kwaicdn.*
+||cdndns.kwd.inkuai.com
+||*.ecukwai.com
+||p5*.*kwai.com
+||p2p*.xxpkg.com
+||*.xyydedge.*
+||*.oppass.*
+||*.wxlivecdn.*
+||*.willcdn.*
+||*.xxpkg.*
+||*.ksapisrv.*
+||*.kwimgs.*
+||*.hongboluo.*
+||*.qjsalia.*
+||*.ndcimgs.*
+||*.xyydnode.*
+! 抖音pcdn
+||*.smtcdns.*
