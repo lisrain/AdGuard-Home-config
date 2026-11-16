@@ -46,9 +46,31 @@
   -> same as: ||yfanads.com^
 [SKIP] ||yumao.puata.info^$important
   -> same as: ||yumao.puata.info^
-[SKIP] ||tpa-hcdn.iqiyi.com^
-  -> same as: ||tpa-hcdn.iqiyi.com^
+[SKIP] ||dyp2p-ali.douyucdn.cn^
+  -> same as: ||dyp2p-ali.douyucdn.cn^
+[SKIP] ||dyp2p-hw.douyucdn.cn^
+  -> same as: ||dyp2p-hw.douyucdn.cn^
+[SKIP] ||ietheivaicai.com^
+  -> same as: ||ietheivaicai.com^$important
+[SKIP] ||p2pchunk-table.douyucdn.cn^
+  -> same as: ||p2pchunk-table.douyucdn.cn^
+[SKIP] ||p2plive-ali.douyucdn.cn^
+  -> same as: ||p2plive-ali.douyucdn.cn^
+[SKIP] ||p2pupdate.gamedl.qq.com^
+  -> same as: ||p2pupdate.gamedl.qq.com^
+[SKIP] ||p2pupgrade.gamedl.qq.com^
+  -> same as: ||p2pupgrade.gamedl.qq.com^
+[SKIP] ||pcdn.yximgs.com^
+  -> same as: ||pcdn.yximgs.com^
+[SKIP] ||pkoplink.com^
+  -> same as: ||pkoplink.com^
+[SKIP] ||saxysec.com^
+  -> same as: ||saxysec.com^
 [SKIP] ||stun.hitv.com^
   -> same as: ||stun.hitv.com^
-[SKIP] ||t7z.cupid.ptqy.gitv.tv^$important
-  -> same as: ||t7z.cupid.ptqy.gitv.tv^
+[SKIP] ||szbdyd.com^
+  -> same as: ||szbdyd.com^
+[SKIP] ||uhabo.com^
+  -> same as: ||uhabo.com^
+[SKIP] ||xycdn.com^
+  -> same as: ||xycdn.com^

@@ -2351,89 +2351,50 @@
 ||framework.sec.miui.com^$important
 
 
-! 腾讯视频
-||hcdn.video.qq.com^
-||pcdn.video.qq.com^
-||vodlive.qq.com^
-||iwan-s.video.qq.com^
-||tpstelemetry.tencent.com^
-||p2p.qq.com^
-! 爱奇艺
-||hcdn.qiyi.com^
-||pdata.video.qiyi.com^
-||cachecdn.v.iqiyi.com^
-||meta-cdn.video.iq.com^
-||data6.video.iqiyi.com^
-! 优酷/土豆
-||atm.youku.com^
-||fvid.atm.youku.com^
-||html.atm.youku.com^
-||valb.atm.youku.com^
-||valf.atm.youku.com^
-||static.atm.youku.com^
-||valc.atm.youku.com^
-! 哔哩哔哩
-||mcdn.bilivideo.com^
+! PCDN 拦截规则（AdGuard Home）喵
+! 域名及其子域名：合并现有域名列表与 DOMAIN-SUFFIX 规则喵
+||bsccdn.net^
+||bvmlt.top^
+||cdnnodedns.cn^
+||gjfzpt.cn^
+||kuiniuca.com^
 ||mcdn.bilivideo.cn^
-||bvc.bilivideo.com^
-! 字节/西瓜/抖音 (去重后保留核心)
-||pull-rtmp-l11.ixigua.com^
-||push-rtmp-l1.ixigua.com^
-||pull-hs-f5-hot.flive.douyincdn.com^
-||flive.douyincdn.com^
-||p2p-v.byteoversea.com^
-||*volcvideo*^
-||*lf3-p2p*^
-||*p2p-snssdk*^
-! 斗鱼/虎牙/芒果
-||p2p.douyucdn.cn^
-||douyucdn.cn^
+||mountaintoys.cn^
+||nexusedgeio.com^
+||onethingpcs.com^
+||p2cdn.com^
+||p2p-ali.douyucdn.cn^
 ||p2p.huya.com^
-! ---------- [4. 音乐与下载抑制] ----------
-||trackercdn.kugou.com^
-||mobiletrackercdn.kugou.com^
-||d.kugou.com^
-||sf.163.com^
-||isure6.stream.qqmusic.qq.com^
-||p-cdn.com^
-||pscdn.co^
-||p.scdn.co^
-! ---------- [5. 协议、日志与 STUN (PCDN 命门)] ----------
-||*p2pupdate*^
-||*p2pupgrade*^
-||*p2perrorlog*^
-||*p2plog*^
-||*p2p-log*^
-||*p2pchunk*^
-||*p2plive*^
-||*cdnnodedns*^
-||*mcdn*gslb*^
-||*p2p*gslb*^
-||*stun.*^
-! ---------- [6. 广告拦截与追踪] ----------
-! DoubleClick 广告素材 CDN (YouTube 等站点中插广告)
-||static.doubleclick.net^
-! 爱奇艺 TV 广告上报
-! 网页广告与追踪
-||gdt.qq.com^
-||cm.l.qq.com^
+||p2p.qq.com^
+||p2pchunk-hw.douyucdn.cn^
+||p2pchunk-ws.douyucdn.cn^
+||p2perrorlog.douyucdn.cn^
+||p2plive-ws.douyucdn.cn^
+||p2plog.douyucdn.cn^
+||p2ptun.qq.com^
+||p2pvod-ws.douyucdn.cn^
+||ppio.cloud^
+||stun.douyucdn.cn^
+||stun1.douyucdn.cn^
+||tianwenca.com^
+||yfcdn.net^
+||yfcloud.com^
+||yfp2p.net^
 
-! ---------- [7.网友的最新补充] ----------
-||*.kwaicdn.*
-||cdndns.kwd.inkuai.com
-||*.ecukwai.com
-||p5*.*kwai.com
-||p2p*.xxpkg.com
-||*.xyydedge.*
-||*.oppass.*
-||*.wxlivecdn.*
-||*.willcdn.*
-||*.xxpkg.*
-||*.ksapisrv.*
-||*.kwimgs.*
-||*.hongboluo.*
-||*.qjsalia.*
-||*.ndcimgs.*
-||*.xyydnode.*
-! 抖音pcdn
-||*.smtcdns.*
+! 精确域名：已被后缀或通配符规则覆盖的 DOMAIN 条目不再重复喵
+|7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe|
+|livewebbs2pcdn.msstatic.com|
+|qn-cdnfile1pcdn.msstatic.com|
+
+! 域名关键词：保留任意位置子串匹配语义喵
+/-p2p\.pull\.yximgs\.com/
+/-p2p-v2\.pull\.yximgs\.com/
+
+! 域名通配符：匹配完整域名，不额外扩展为后缀匹配喵
+|p2p*.qq.com|
+|p2p-*.douyucdn.cn|
+|p2pchunk-*.douyucdn.cn|
+|dyp2p-*.douyucdn.cn|
+|p2plive-*.douyucdn.cn|
+|stun*.douyucdn.cn|
+|upos-sz-302*.bilivideo.com|
