@@ -1,9 +1,9 @@
 !Title: AWAvenue Ads Rule
 !--------------------------------------
-!Total lines: 976
-!Version: 1.7.8-release
-!Update time: 2026-10-22 21:27:09 UTC+8
-!Update content: 新增海信与乐播广告拦截并调整会员推广分类
+!Total lines: 971
+!Version: 1.7.9-release
+!Update time: 2026-11-15 00:37:33 UTC+8
+!Update content: 新增拦截识x、小黑盒、淘x等App的日志埋点与设备指纹上报域名10条
 
 !Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 !License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
@@ -90,17 +90,16 @@
 ||admobile.top^
 ||adreq.vivo.com.cn^
 ||ads-api-o.api.leiniao.com^
-||ads-api.tiktok.com^
 ||ads-api.twitter.com^
 ||ads-img-al.xhscdn.com^
+||ads-img-bak.xhscdn.com^
 ||ads-img-qc.xhscdn.com^
-||ads-jp.tiktok.com^
 ||ads-marketing-vivofs.vivo.com.cn^
 ||ads-sdk-api.ranfenghd.com^
-||ads-sg.tiktok.com^
 ||ads-shopping.shouqianba.com^
 ||ads-video-al.xhscdn.com^
 ||ads-video-qc.xhscdn.com^
+||ads-vp5.xhscdn.com^
 ||ads.95516.com^
 ||ads.adfunlink.com^
 ||ads.auctions.yahoo.com^
@@ -118,7 +117,6 @@
 ||ads.raidrive.com^
 ||ads.servebom.com^
 ||ads.service.kugou.com^
-||ads.tiktok.com^
 ||ads.v3mh.com^
 ||ads.youtube.com^
 ||ads.zhinengxiyifang.cn^
@@ -155,7 +153,6 @@
 ||adsmind.ugdtimg.com^
 ||adsmoloco.com^
 ||adsp.xunlei.com^
-||adspecs.yahoo.com^
 ||adstat.izuiyou.com^
 ||adstats.tencentmusic.com^
 ||adstextview.qq.com^
@@ -163,9 +160,7 @@
 ||adstore-index-1252524079.file.myqcloud.com^
 ||adstrategy.biz.weibo.com^
 ||adstudio-assets.scdn.co^
-||adstudio.spotify.com^
 ||adtago.s3.amazonaws.com^
-||adtech.yahooinc.com^
 ||adtrack.quark.cn^
 ||adtracker.adfunlink.com^
 ||adtracker.medproad.com^
@@ -173,12 +168,6 @@
 ||adv-api.shenshiads.com^
 ||adv.sec.intl.miui.com^
 ||adv.sec.miui.com^
-||advertising-api-eu.amazon.com^
-||advertising-api-fe.amazon.com^
-||advertising-api.amazon.com^
-||advertising.apple.com^
-||advertising.yahoo.com^
-||advertising.yandex.ru^
 ||advice-ads.s3.amazonaws.com^
 ||adview.cn^
 ||adx-ad.smart-tv.cn^
@@ -266,6 +255,7 @@
 ||api.yfanads.com^
 ||api5-normal-quic-lf.ixigua.com^
 ||apiyd.my91app.com^
+||apmplus.volces.com^
 ||app-measurement.com^
 ||appcfg.v.qq.com^
 ||applog-perf.uc.cn^
@@ -295,7 +285,6 @@
 ||bes-mtj.baidu.com^
 ||bgg.baidu.com^
 ||bianxian.com^
-||bingads.microsoft.com^
 ||biz.weibo.com^
 ||bj-td-menta-01-callback.advlion.com^
 ||bj.ad.track.66mobi.com^
@@ -339,6 +328,7 @@
 ||click.liftoff.io^
 ||click.oneplus.cn^
 ||click4.chinaliftoff.io^
+||client-upload.cn-shanghai.log.aliyuncs.com^
 ||clog.miguvideo.com^
 ||cloooud.com^
 ||cn-api.anythinktech.com^
@@ -356,7 +346,6 @@
 ||cpro.baidustatic.com^
 ||crash2.zhihu.com^
 ||crashlyticsreports-pa.googleapis.com^
-||csjplatform.com^
 ||d.applovin.com^
 ||d.applvn.com^
 ||da.anythinktech.com^
@@ -380,6 +369,7 @@
 ||dsp-x.jd.com^
 ||dsp.fcbox.com^
 ||dsplog-adnet.vivo.com.cn^
+||du-app.cn-hangzhou.log.aliyuncs.com^
 ||dualstack-logs.amap.com^
 ||dxp.baidu.com^
 ||dyp2p-ali.douyucdn.cn^
@@ -390,6 +380,7 @@
 ||ef-dongfeng.tanx.com^
 ||engine.dcad01.com^
 ||entry.baidu.com^
+||errnewlog.umeng.com^
 ||et-eus.w.inmobi.com^
 ||event.tradplusad.com^
 ||events-drcn.op.dbankcloud.cn^
@@ -402,6 +393,7 @@
 ||file.daihuo.qq.com^
 ||firebaselogging-pa.googleapis.com^
 ||flurry.com^
+||fp-it.fengkongcloud.com^
 ||frontend-perf-service.e.kuaishou.com^
 ||fxgate.baidu.com^
 ||g-adnet.hiaiabc.com^
@@ -516,6 +508,7 @@
 ||l6.fancyapi.com^
 ||launcher.smart-tv.cn^
 ||launcherimg.smart-tv.cn^
+||lf-event-manager.oceanengine.com^
 ||lf3-ad-union-sdk.pglstatp-toutiao.com^
 ||lf6-ad-union-sdk.pglstatp-toutiao.com^
 ||lftxali.fancyapi.com^
@@ -534,6 +527,7 @@
 ||log-api.huxiu.com^
 ||log-api.pangolin-sdk-toutiao-b.com^
 ||log-api.pangolin-sdk-toutiao.com^
+||log-auth.zztfly.com^
 ||log-report.com^
 ||log-sdk.gifshow.com^
 ||log-sdk.ksapisrv.com^
@@ -773,6 +767,8 @@
 ||service.vmos.cn^
 ||sf16-static.i18n-pglstatp.com^
 ||sf3-fe-tos.pglstatp-toutiao.com^
+||shihuo-new.log.shihuocdn.cn^
+||shihuo.log.shihuocdn.cn^
 ||shouji.sogou.com^
 ||sigmob.com^
 ||skdisplay.jd.com^
@@ -887,9 +883,8 @@
 ||umini.shujupie.com^
 ||union-mlog.bigda.com^
 ||union-record.oss-cn-zhangjiakou.aliyuncs.com^
-||union.baidu.cn^
-||union.baidu.com^
 ||unityads.unity3d.com^
+||upc.zztfly.com^
 ||update.avlyun.sec.miui.com^
 ||update.lejiao.tv^
 ||update0.aiclk.com^
@@ -990,43 +985,43 @@
 # 也可以关注公众号：湖中剑，保证不迷路
 # GitHub Host Start
 
-185.199.111.215              github.githubassets.com
-140.82.113.22                central.github.com
-185.199.108.133              desktop.githubusercontent.com
-185.199.111.133              camo.githubusercontent.com
-185.199.108.133              github.map.fastly.net
-151.101.1.194                github.global.ssl.fastly.net
-172.182.252.133              gist.github.com
-185.199.111.153              github.io
-172.182.252.133              github.com
-172.182.252.137              api.github.com
-185.199.111.133              raw.githubusercontent.com
+185.199.108.215              github.githubassets.com
+140.82.113.21                central.github.com
+185.199.111.133              desktop.githubusercontent.com
+185.199.110.133              camo.githubusercontent.com
+185.199.110.133              github.map.fastly.net
+151.101.193.194              github.global.ssl.fastly.net
+140.82.112.4                 gist.github.com
+185.199.109.153              github.io
+140.82.113.3                 github.com
+140.82.112.5                 api.github.com
+185.199.110.133              raw.githubusercontent.com
 185.199.108.133              user-images.githubusercontent.com
-185.199.108.133              favicons.githubusercontent.com
+185.199.111.133              favicons.githubusercontent.com
 185.199.108.133              avatars5.githubusercontent.com
-185.199.108.133              avatars4.githubusercontent.com
-185.199.109.133              avatars3.githubusercontent.com
-185.199.109.133              avatars2.githubusercontent.com
-185.199.111.133              avatars1.githubusercontent.com
-185.199.108.133              avatars0.githubusercontent.com
-185.199.111.133              avatars.githubusercontent.com
-172.182.252.132              codeload.github.com
-16.15.214.222                github-cloud.s3.amazonaws.com
-16.15.244.38                 github-com.s3.amazonaws.com
-52.216.49.90                 github-production-release-asset-2e65be.s3.amazonaws.com
-54.231.134.82                github-production-user-asset-6210df.s3.amazonaws.com
-16.15.252.105                github-production-repository-file-5c1aeb.s3.amazonaws.com
-185.199.108.153              githubstatus.com
-140.82.112.17                github.community
-185.199.111.133              media.githubusercontent.com
-185.199.110.133              objects.githubusercontent.com
-185.199.110.133              raw.github.com
-138.91.182.224               copilot-proxy.githubusercontent.com
+185.199.110.133              avatars4.githubusercontent.com
+185.199.110.133              avatars3.githubusercontent.com
+185.199.108.133              avatars2.githubusercontent.com
+185.199.110.133              avatars1.githubusercontent.com
+185.199.110.133              avatars0.githubusercontent.com
+185.199.108.133              avatars.githubusercontent.com
+140.82.112.10                codeload.github.com
+16.15.164.73                 github-cloud.s3.amazonaws.com
+16.15.163.194                github-com.s3.amazonaws.com
+52.216.24.200                github-production-release-asset-2e65be.s3.amazonaws.com
+52.217.139.66                github-production-user-asset-6210df.s3.amazonaws.com
+52.216.34.74                 github-production-repository-file-5c1aeb.s3.amazonaws.com
+185.199.109.153              githubstatus.com
+140.82.112.18                github.community
+185.199.108.133              media.githubusercontent.com
+185.199.111.133              objects.githubusercontent.com
+185.199.111.133              raw.github.com
+4.249.131.160                copilot-proxy.githubusercontent.com
 
 # Please Star : https://github.com/ineo6/hosts
 # Mirror Repo : https://gitlab.com/ineo6/hosts
 
-# Update at: 2026-11-12 14:03:15
+# Update at: 2026-11-16 06:26:34
 
 # GitHub Host End
 
@@ -1034,41 +1029,41 @@
 
 
 # Generated by Project Mjolnir
-# Date: 2026-11-12 07:18:14 UTC
+# Date: 2026-11-15 19:17:40 UTC
 # Type: IPv4 Only
 #
 # FCM Domains: mtalk.google.com, mtalk4.google.com, mtalk-staging.google.com...
 # Generated using Go TCP 5228 two-stage ranking: single-shot shortlist, then repeated handshakes scored by median RTT + loss, one IP per /24 (IPv6 /64)
 #
-# Seeds: IPv4=75, IPv6=85
+# Seeds: IPv4=78, IPv6=78
 # Selected: IPv4=12, IPv6=12
 #
 # Probe stats (TCP 5228 handshakes):
-#   74.125.137.188             median=166ms p90=183ms loss=0/20
-#   172.217.78.188             median=174ms p90=479ms loss=0/20
-#   108.177.98.188             median=181ms p90=484ms loss=0/20
-#   192.179.26.188             median=181ms p90=474ms loss=0/20
-#   74.125.199.188             median=182ms p90=201ms loss=0/20
-#   74.125.142.188             median=184ms p90=467ms loss=0/20
-#   74.125.135.188             median=184ms p90=493ms loss=0/20
-#   173.194.203.188            median=185ms p90=486ms loss=0/20
-#   74.125.195.188             median=185ms p90=485ms loss=0/20
-#   173.194.43.188             median=187ms p90=475ms loss=0/20
-#   74.125.20.188              median=188ms p90=491ms loss=0/20
-#   142.250.105.188            median=207ms p90=509ms loss=0/20
+#   74.125.137.188             median=162ms p90=178ms loss=0/20
+#   142.250.141.188            median=162ms p90=181ms loss=0/20
+#   192.179.30.188             median=164ms p90=175ms loss=0/20
+#   142.251.2.188              median=167ms p90=183ms loss=0/20
+#   108.177.98.188             median=169ms p90=181ms loss=0/20
+#   172.217.78.188             median=169ms p90=188ms loss=0/20
+#   142.250.107.188            median=170ms p90=182ms loss=0/20
+#   173.194.202.188            median=171ms p90=181ms loss=0/20
+#   74.125.195.188             median=174ms p90=183ms loss=0/20
+#   192.179.26.188             median=175ms p90=196ms loss=0/20
+#   173.194.43.188             median=176ms p90=193ms loss=0/20
+#   173.194.203.188            median=176ms p90=197ms loss=0/20
 
 74.125.137.188 mtalk.google.com
-172.217.78.188 mtalk4.google.com
-108.177.98.188 mtalk-staging.google.com
-192.179.26.188 mtalk-dev.google.com
-74.125.199.188 alt1-mtalk.google.com
-74.125.142.188 alt2-mtalk.google.com
-74.125.135.188 alt3-mtalk.google.com
-173.194.203.188 alt4-mtalk.google.com
+142.250.141.188 mtalk4.google.com
+192.179.30.188 mtalk-staging.google.com
+142.251.2.188 mtalk-dev.google.com
+108.177.98.188 alt1-mtalk.google.com
+172.217.78.188 alt2-mtalk.google.com
+142.250.107.188 alt3-mtalk.google.com
+173.194.202.188 alt4-mtalk.google.com
 74.125.195.188 alt5-mtalk.google.com
-173.194.43.188 alt6-mtalk.google.com
-74.125.20.188 alt7-mtalk.google.com
-142.250.105.188 alt8-mtalk.google.com
+192.179.26.188 alt6-mtalk.google.com
+173.194.43.188 alt7-mtalk.google.com
+173.194.203.188 alt8-mtalk.google.com
 
 
 
@@ -1922,7 +1917,6 @@
 #针对动漫之家的拦截规则
 ||mobrtb.com^$important
 ||domob.cn^$important
-||tanx.com^$important
 ||magicacid.cn^$important
 ||youzanyun.com^$important
 ||adsdk.*^$important
@@ -1938,6 +1932,8 @@
 ||news.app.autohome.com.cn^$important
 ||guanceyun.autohome.com.cn^$important
 ||leads.*^$important
+#针对腾讯微信相关域名的放行规则
+@@||apd-pcdnwxlogin.teg.tencent-cloud.net^$important
 #针对两步路户外助手广告拦截
 ||shop45920354.m.youzan.com^$important
 ||ad.*^$important
